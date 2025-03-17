@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            background-color:hotpink;
+           width: 300px;
+           /* Formu Ortalar */
+           margin:auto;
+           padding: 20px ; 
+           border: 3px solid rgb(201, 33, 117);
+           border-radius: 5px;
+           font-familiy: sans-serif;
+           color: rgb(255, 245, 252) ;
+        }
+
+        input {
+            width: 100%;
+            padding: 4px 0px;
+            margin:4px 0px;
+            border: 3px solid rgb(201, 33, 117);  
+        }
+        button {
+            width: 100%;
+            background-color: rgb(194, 0, 97);
+            border: none;
+            color: white;
+            padding: 8px;
+            cursor: pointer;
+        }
+        /* Buttonun üzerine geldiğimizde işaret çıkması ve renk değişimi sağlamak için kullandım */
+        button:hover {
+            background-color:rgb(130, 0, 65) ;
+        }
+        /* Mobil görünüme entegre olması icin yaptım */
+        @media (max-witdth: 400px) {
+            form {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+    <label for="name">Adınız</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="emal">Email adresiniz</label>
+    <input type="email" name="email" id="email">
+    <br>
+    <button type="submit">Gönder</button>
+    </form>
+</body>
+</html>
